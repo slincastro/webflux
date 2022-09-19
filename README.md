@@ -1,29 +1,30 @@
 # Creando un nuevo proyecto desde 0
 
+[Referencia](https://github.com/bancolombia/scaffold-clean-architecture)
 
-Crear un directorio :
+1) Crear un directorio :
 
 `mkdir test-bc`
 
-* la version de gradle debe ser 6.9 or superior
+> la version de gradle debe ser 6.9 or superior
 
-Que version de gradle tengo :
+2) Que version de gradle tengo :
 
 `gradle -v `
 
-si no tengo instalo gradle :
+ si no tengo instalo gradle :
 
 `brew install gradle`
 
-Iniciar graddle en el proyecto:
+2.2) Iniciar graddle en el proyecto:
 
 `cd test-bc`
 
 `gradle init`
 
 Actualizar Gradle seteando la version del gradle wrapper :
->` ./gradlew wrapper --gradle-version=6.9`
 
+` ./gradlew wrapper --gradle-version=6.9`
 
 Incluir el plugin de bancolombia :
 
