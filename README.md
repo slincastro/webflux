@@ -1,4 +1,4 @@
-# Creando un nuevo proyecto desde 0
+# Creando un nuevo proyecto con webflux en 10 pasos desde 0
 
 [Referencia](https://github.com/bancolombia/scaffold-clean-architecture)
 
@@ -16,17 +16,17 @@
 
 `brew install gradle`
 
-2.2) Iniciar graddle en el proyecto:
+4) Iniciar graddle en el proyecto:
 
 `cd test-bc`
 
 `gradle init`
 
-Actualizar Gradle seteando la version del gradle wrapper :
+5) Actualizar Gradle seteando la version del gradle wrapper :
 
 ` ./gradlew wrapper --gradle-version=6.9`
 
-Incluir el plugin de bancolombia :
+6) Incluir el plugin de bancolombia :
 
 `
 echo "plugins {
@@ -34,21 +34,21 @@ echo "plugins {
 }" > build.gradle
 `
 
-Generate scafold : 
+7) Generar el scafold : 
 
 `gradle cleanArchitecture --package=co.com.bancolombia --name=NameProject --type=reactive --coverage=jacoco --lombok=true`
 
-Run application :
+8) correr la application :
 
 `./gradlew bootrun`
 
-Include new entrypoint :
+9) Incluir el nuevo entrypoint :
 
 `gradle generateEntryPoint --type=webflux`
 
-Hit the endpoint :
+10) Consumir el endpoint :
 
 `http://localhost:8080/api/usecase/path`
 
-`curl --location --request GET 'http://localhost:8080/api/usecase/path'
+`curl --location --request GET 'http://localhost:8080/api/usecase/path`
 `
